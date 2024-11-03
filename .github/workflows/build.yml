@@ -18,6 +18,7 @@ jobs:
           export APP_ENV=development
           export DEBUG_MODE=true
           echo "CONFIGS=${{ secrets.SECRET }}" >> .env
+          echo "${{secrets.SECRET}}"
           
       - name: Install Dependencies
         run: |
